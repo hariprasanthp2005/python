@@ -23,5 +23,5 @@ cars=[
 
 #collect all white color cars into list
 
-colour=list(filter(lambda x:x["color"]== "White",cars))
+colour=list(filter(lambda car:car["color"]== "White",cars))
 print(colour)

@@ -22,10 +22,7 @@ cars=[
 ]
 
 #add every car price by 20000
-def car_price(car):
-    car["price"]=car["price"]+20000
-    car["avail"]= True
-    return car
 
-car1=list(map(car_price,cars))
-print(car1)
+#price1=list(map(lambda car:{**car,"price":car["price"]+20000},cars))
+price1=list(map(lambda car:car["price"]+20000,cars))
+print(price1)

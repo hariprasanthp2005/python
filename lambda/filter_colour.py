@@ -21,11 +21,5 @@ cars=[
  { "brand": "Nissan", "model": "Magnite", "price": 900000, "color": "Silver" }
 ]
 
-#add every car price by 20000
-def car_price(car):
-    car["price"]=car["price"]+20000
-    car["avail"]= True
-    return car
-
-car1=list(map(car_price,cars))
-print(car1)
+colour=list(filter(lambda car:car["color"]== "White",cars))
+print(colour)
