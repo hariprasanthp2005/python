@@ -1,39 +1,14 @@
-class Employee:
+class Student:
 
-    def __init__(self, name, work, salary):
+    def __init__(self, name):
         self.name = name
-        self.work = work
-        self.salary = salary
+        name = "Rahul"
 
-    def details(self):
-        print("\nEmployee Details")
-        print("Name   :", self.name)
-        print("Work   :", self.work)
-        print("Salary :", self.salary)
-        print("------------------------")
+hari = Student("Hari")
 
+print(hari.name)
 
-# Empty list to store employee objects
-employees = []
+'''
+The local variable name initially stores "Hari". Then self.name = name copies that value into the object. Later, even if the local variable changes to "Rahul", the object's attribute self.name is not affected because the copy has already been made.
 
-# Taking input for 5 employees (change to 50 if needed)
-for i in range(5):
-    print(f"\nEnter details for Employee {i+1}")
-
-    name = input("Enter name: ")
-    work = input("Enter work: ")
-    salary = int(input("Enter salary: "))
-
-    # Create object
-    emp = Employee(name, work, salary)
-
-    # Store object in list
-    employees.append(emp)
-
-
-# Display all employee details
-print("\nAll Employee Records")
-print("========================")
-
-for emp in employees:
-    emp.details()
+'''
