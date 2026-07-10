@@ -18,6 +18,5 @@ hr=Hr("vk",200000)
 dev.code()
 hr.recruit()
 
-print(dev.salary)
-print(hr.salary)
+
                 
