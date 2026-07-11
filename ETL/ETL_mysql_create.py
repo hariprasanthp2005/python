@@ -1,6 +1,6 @@
 #Extract
 import requests,mysql.connector
-req_data=requests.get('https://dummyjson.com/products')
+req_data=requests.get("https://jsonplaceholder.typicode.com/users")
 users=req_data.json()
 print(len(users))
 
